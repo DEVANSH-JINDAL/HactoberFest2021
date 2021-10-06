@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms </title>
+    <!-- <link rel="stylesheet" href="forms1.css"> -->
+    <style>
+        *{
+    
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    padding: 6px;
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 25px 5px 25px;
+    border:1px  gray;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+input[type="url"],
+select,
+textarea{
+    width: 100%;
+    margin: 5px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    
+}
+input[type="submit"],
+input[type="reset"]{
+    background-color: #4daea1;
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: large;
+
+}
+input[type="submit"]:hover{
+    background-color: red;
+    border: 0.1px solid red;
+}
+input[type="reset"]:hover{
+    background-color: red;
+    border: 0.1px solid red;
+}
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h2 class="heading">Forms</h2>
+    <form autocomplete="off">
+        <fieldset>
+            <legend>Personal Info:</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob" min="1995-01-01" max="2021-06-27"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+            <label for="mnum">Mobile Number:</label>
+            <input type="number" id="mnum" name="mnum"><br><br>
+            <label for="mail">Mail ID:</label>
+            <input type="email" id="mail" name="mail"><br><br>
+            <label for="car">Choose your Car:</label>
+            <select id="car" name="car">
+                <option value="kia">Kia</option>
+                <option value="creta">Creta</option>
+                <option value="baleno">Baleno</option>
+                <option value="range rover" selected>Range Rover</option>
+            </select><br><br>
+            <textarea name="address" rows="3" cols="30">Address:-</textarea><br>
+            <p>Choose Your Fav. Sport</p>
+            <input type="radio" id="game" name="game">
+            <label for="game">Indoor</label>
+            <input type="radio" id="game" name="game">
+            <label for="game">Outdoor</label>
+            <input type="radio" id="game" name="game">
+            <label for="game">E-games</label><br><br>
+            <label for="color">Fav. Color</label>
+            <input type="color" id="color" name="color"><br><br>
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="file"><br><br>
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website"><br><br>
+            
+            <input type="submit"><br><br>
+            <input type="reset">
+
+        </fieldset>
+    </form>        
+   </div>
+        
+</body>
+</html>
